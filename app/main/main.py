@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from routes import user, employee,department, analytics
+from app.routes import user, employee,department, analytics
 
 
 app = FastAPI()
