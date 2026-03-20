@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import func
-from models.employees import Employee
-from models.departments import Department
+from app.models.employees import Employee
+from app.models.departments import Department
 from fastapi import status, HTTPException
 
 def salary_ranking_per_department(db: Session, department_id: int):

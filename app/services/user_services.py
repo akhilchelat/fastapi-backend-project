@@ -1,11 +1,11 @@
-from models.users import User
+from app.models.users import User
 from sqlalchemy.orm import Session
 from fastapi import HTTPException, Depends, status
 from typing import Optional
-from security.hashing import hash_password, verify_password
+from app.security.hashing import hash_password, verify_password
 from sqlalchemy.exc import IntegrityError
-from security.authorization import require_role
-from security.authentication import create_access_token
+from app.security.authorization import require_role
+from app.security.authentication import create_access_token
 
 def create_user(db: Session, name: str, email: str, password: str, role: str, current_user: User):
 

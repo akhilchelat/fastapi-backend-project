@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Boolean
 from sqlalchemy.orm import relationship
-from db.base import Base
-from models.time_stamp import Timestamp
+from app.db.base import Base
+from app.models.time_stamp import Timestamp
 
 class Employee(Base, Timestamp):
     __tablename__ = "employees"

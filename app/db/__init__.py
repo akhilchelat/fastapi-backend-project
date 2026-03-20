@@ -1,3 +1,3 @@
-from db.base import Base
-from db.engine import create_engine
-from db.session import SessionLocal, get_db
+from app.db.base import Base
+from app.db.engine import create_engine
+from app.db.session import SessionLocal, get_db

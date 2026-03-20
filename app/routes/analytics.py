@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from db.session import get_db
-from services import analytics_services
-from security.authorization import require_role
-from models.users import User
-from schemas import analytics_schema
+from app.db.session import get_db
+from app.services import analytics_services
+from app.security.authorization import require_role
+from app.models.users import User
+from app.schemas import analytics_schema
 
 router = APIRouter(prefix="/analytics", tags=["Analytics"])
 

@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from models.employees import Employee
-from models.departments import Department
+from app.models.employees import Employee
+from app.models.departments import Department
 from fastapi import HTTPException, status
 from sqlalchemy.exc import IntegrityError
 from typing import Optional

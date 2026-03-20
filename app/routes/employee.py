@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from db.session import get_db
-from services import employee_services
-from security.authorization import require_role
-from models.users import User
-from schemas import employee_schema
+from app.db.session import get_db
+from app.services import employee_services
+from app.security.authorization import require_role
+from app.models.users import User
+from app.schemas import employee_schema
 
 router = APIRouter(prefix="/employees", tags=["Employees"])
 

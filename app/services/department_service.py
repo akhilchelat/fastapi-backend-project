@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from models.departments import Department
+from app.models.departments import Department
 from fastapi import HTTPException, status
 from sqlalchemy.exc import IntegrityError
 

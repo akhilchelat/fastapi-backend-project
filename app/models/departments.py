@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Boolean
 from sqlalchemy.orm import relationship
-from db.base import Base
-from models.time_stamp import Timestamp
+from app.db.base import Base
+from app.models.time_stamp import Timestamp
 
 class Department(Base, Timestamp):
     __tablename__ = "departments"

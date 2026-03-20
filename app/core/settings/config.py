@@ -1,4 +1,4 @@
-from core.settings.base import AppSettings
+from app.core.settings.base import AppSettings
 
 class Settings(AppSettings):
     model_config = {

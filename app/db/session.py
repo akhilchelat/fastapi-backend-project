@@ -1,7 +1,7 @@
 # how request talk to the db
 
 from sqlalchemy.orm import sessionmaker
-from db.engine import engine
+from app.db.engine import engine
 
 SessionLocal = sessionmaker(
     autocommit=False,
