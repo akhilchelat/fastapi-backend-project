@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Boolean
 from sqlalchemy.orm import relationship
 from app.db.base import Base
-from app.models.time_stamp import Timestamp
+from app.models.time_stamp import TimestampMixin
 
-class Employee(Base, Timestamp):
+class Employee(Base, TimestampMixin):
     __tablename__ = "employees"
 
     id = Column(Integer, primary_key=True, index=True)

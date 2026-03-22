@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, String, Boolean
 from sqlalchemy.orm import relationship
 from app.db.base import Base
-from app.models.time_stamp import Timestamp
+from app.models.time_stamp import TimestampMixin
 
-class User(Base, Timestamp):
+class User(Base, TimestampMixin):
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, index=True)
