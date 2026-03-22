@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings
 
 class AppSettings(BaseSettings):
    
-    APP_NAME = "FastAPI Backend"
+    APP_NAME: str = "FastAPI Backend"
     ENVIRONMENT: str = "production"
 
     
