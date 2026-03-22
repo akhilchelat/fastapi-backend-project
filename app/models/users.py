@@ -13,4 +13,4 @@ class User(Base, TimestampMixin):
     role = Column(String, nullable=False)
     is_active = Column(Boolean, default=True, nullable=False)
 
-    employee = relationship("Employee", back_populates="users", uselist=False)
+    employee = relationship("Employee", back_populates="user", uselist=False, foreign_keys="Employee.user_id")

@@ -17,5 +17,7 @@ class Employee(Base, TimestampMixin):
 
 
     user = relationship("User", foreign_keys=[user_id], back_populates="employee")
+    created_by_user = relationship("User", foreign_keys=[created_by])
+
     department = relationship("Department", back_populates="employees")
 
