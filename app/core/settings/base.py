@@ -3,8 +3,8 @@ from pydantic_settings import BaseSettings
 
 class AppSettings(BaseSettings):
    
-    APP_NAME: str
-    ENVIRONMENT: str  
+    APP_NAME = "FastAPI Backend"
+    ENVIRONMENT: str = "production"
 
     
     DATABASE_URL: str
