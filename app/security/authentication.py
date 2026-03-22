@@ -8,7 +8,7 @@ from app.db.session import get_db
 from app.models.users import User
 from app.core.settings.config import settings
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/users/login")
 
 def create_access_token(data: dict):
     to_encode = data.copy()
